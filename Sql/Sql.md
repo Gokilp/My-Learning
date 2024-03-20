@@ -1,6 +1,7 @@
 SQL stands for Structured Query Language. It is a domain-specific language used for managing and manipulating relational databases. SQL allows users to perform various operations on databases, such as querying data, inserting new records, updating existing records, and deleting records
 
-What is SQL?
+## What is SQL?
+
 SQL stands for Structured Query Language
 SQL lets you access and manipulate databases
 SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
