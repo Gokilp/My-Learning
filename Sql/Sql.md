@@ -14,7 +14,14 @@ SQL: Most databases use Structured Query Language (SQL) for writing and querying
 
 ## **Evolution of Databases:**
 
-Early databases included navigational databases (hierarchical and network models), which were inflexible. In the 1980s, relational databases gained popularity. The 1990s saw the rise of object-oriented databases. More recently, NoSQL databases emerged to handle unstructured data. Today, cloud databases and self-driving databases are breaking new ground.
+1. **960s - Hierarchical Databases:** Organized data in tree-like structures (e.g., IBM's IMS).
+2. **Late 1960s to early 1970s - Network Databases:** Introduced many-to-many relationships (network model).
+3. **1970s - Relational Databases:** Edgar F. Codd's relational model with tables, keys, and relationships (e.g., Oracle, MySQL).
+4. **1970s - SQL (Structured Query Language):** Standard language for relational databases.
+5. **1980s to 1990s - Object-Oriented Databases:** Stored data in objects (OODBMS).
+6. **2000s onwards - NoSQL Databases:** Scalable, flexible solutions for unstructured data (e.g., MongoDB, Cassandra).
+7. **2010s onwards - NewSQL Databases:** Blend of SQL and NoSQL features for high-throughput workloads.
+8. **Present - Cloud and Serverless Databases:** Scalable, managed solutions in the cloud with serverless options (e.g., AWS RDS, Azure SQL Database, Google Cloud Spanner).
 
 ## **Difference Between Databases and Spreadsheets:**
 
