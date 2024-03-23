@@ -19,3 +19,11 @@ SQL can create new tables in a database
 SQL can create stored procedures in a database
 SQL can create views in a database
 SQL can set permissions on tables, procedures, and views
+
+## DBMS
+
+- Data base management System is known as DBMS
+- DBMS Interface between database and end user
+- DBMS is an Software to store, retrieve, define and manage data  in data base
+- Easy CRUD operation CRUD means Create, Read, Update , Delete operation
+- Take care Authentication concurrency, logging, backup, optimization etc .. 
