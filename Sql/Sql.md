@@ -86,7 +86,7 @@ Examples of popular relational database management systems (RDBMS) include:
 
 # SQL REQUIRES
 
-```SQl
+```java
 /*
   multiline command
 
@@ -95,3 +95,46 @@ Examples of popular relational database management systems (RDBMS) include:
  -- single line command
 
 ```
+
+# DataTypes
+
+## Character Data
+
+**char** - eg:char(5) stores fixed length string of length 5. Max 255 bytes.
+
+**varchar** - eg:varchar(5) stores variable length string of length 5. Max 65535 bytes.
+
+```sql
+SHOW CHARACTER SET; -- shows various character sets that are supported.
+```
+
+latin1 is the default character set. We can also choose a specific character set like below,
+
+```sql
+varchar(10) character set utf8    -- the particular column is set to utf8
+create database foreign_sales character set utf8;   -- entire database is set to utf8
+```
+
+## Text Data
+
+All images in the section are from Learning SQL by Alan Beaulieu
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f1879307-f804-4c4f-a8ab-d8ddc21ed525/Untitled.png)
+
+**BLOB** - Binary Large Object File → TinyBlob, Blob, MediumBlob, LongBlob
+
+## Numerical Data
+
+**Whole Numbers:**
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/0ad702d3-1df6-47dc-91f5-3f9138046019/Untitled.png)
+
+Tinyint is used to store Bool or Boolean \*\*\*\*
+
+**Decimal Numbers:**
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/7852ed89-95ba-4b8e-beb5-bab9a0ee31fe/Untitled.png)
+
+## Temporal Data
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/6cd5ee5d-b207-46d1-9a1d-4dbc2ba5847e/Untitled.png)
