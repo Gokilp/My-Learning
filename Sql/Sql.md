@@ -1,3 +1,5 @@
+# SQL
+
 # **Database**
 
 A database is an organized collection of structured information or data, typically stored electronically in a computer system. Let me provide you with more details:
@@ -51,7 +53,7 @@ Databases:
 - **[Operational Database](https://www.geeksforgeeks.org/differences-between-operational-database-systems-and-data-warehouse/)**
 - **[NoSQL databases](https://www.geeksforgeeks.org/introduction-to-nosql/)**
 
-# Realtional Data Base
+# Relational Data Base
 
 A Relational Database is a type of database that organizes data into tables with predefined relationships between them. This type of database follows the relational model, which was first proposed by Edgar F. Codd in 1970. Relational databases are based on the principles of relational algebra and use Structured Query Language (SQL) for querying and managing data.
 
@@ -73,6 +75,13 @@ Examples of popular relational database management systems (RDBMS) include:
 
 # SQL?
 
-- SQL stands for Structured Query Language and is a computer language that we use to interact with a relational database. SQL is a tool for organizing, managing, and retrieving archived data from a computer database. The original name was given by IBM as Structured English Query Language, abbreviated by the acronym SEQUEL.
+- **SQL stands for Structured Query Language** and \**\*\*is a computer language that we use to interact with a relational database. SQL is a tool for *organizing*, *managing*, and *retrieving\* archived data from a computer database. The original name was given by IBM as Structured English Query Language, abbreviated by the acronym SEQUEL.
 
 - When data needs to be retrieved from a database, SQL is used to make the request. The DBMS processes the SQL query retrieves the requested data and returns it to us. Rather, SQL statements describe how a collection of data should be organized or what data should be extracted or added to the database.
+
+## SQL Data Base
+
+- Mysql ⇒ Open Source
+- SQL Server ⇒ Microsoft
+- Oracle ⇒ IBM
+- PostgreSQL ⇒ Opensource
