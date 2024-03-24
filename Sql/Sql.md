@@ -165,5 +165,59 @@ use data base
 
 ```sql
 USE (Data base name) ;
-SHOW TABLES;
+SHOW TABLES;  // show all the tables
+
+```
+
+## Table - Create,Delete,Alter
+
+primary key - uniquely identifies a row in a table
+
+```sql
+//creating a table
+CREATE TABLE student(
+	id INT PRIMARY KEY,
+    name VARCHAR(30),
+    gpa DECIMAL(3,2)
+);
+-- ----or-----
+CREATE TABLE student(
+	id INT,
+    name VARCHAR(30),
+    gpa DECIMAL(3,2),
+    PRIMARY KEY(id)
+);
+
+DROP TABLE student; -- drops the table
+
+DESCRIBE student; -- describes the columns in the table student
+
+ALTER TABLE student ADD department VARCHAR(5); -- Adds a new column department to the student table
+
+ALTER TABLE student DROP COLUMN department; -- drops the department column from student table
+-- ---or---
+ALTER TABLE student DROP department; -- same as above
+
+```
+
+## Inserting Data
+
+```sql
+INSERT INTO student VALUES(1,"Aarthi",7.6);
+INSERT INTO student VALUES(2,"Anitha",8.5); -- inserts a row. give values in column order
+
+INSERT INTO student VALUES
+(3,"Anitha",8.5),
+(4,"Arul",8.2),
+(5,"Ashwin",7.6); -- inserts more than one row
+
+INSERT INTO student(id,name) VALUES(5,"Balaji"),(6,"Chandru"); -- inserts specific columns.
+
+```
+
+## Select
+
+```sql
+SELECT * FROM student; -- displays all rows and columns in the student table
+SELECT id,name FROM student; -- displays specific columns
 ```
