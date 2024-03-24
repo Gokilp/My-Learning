@@ -138,3 +138,25 @@ Tinyint is used to store Bool or Boolean \*\*\*\*
 ## Temporal Data
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/6cd5ee5d-b207-46d1-9a1d-4dbc2ba5847e/Untitled.png)
+
+# Basic Query
+
+```sql
+show databases;   // show all the database
+```
+
+Create a database
+
+```sql
+create database (Databasename);  // create a database
+```
+
+Delete a database
+
+```sql
+drop database code;  // delete a data base
+
+drop schema (Databasename) // delete a data base
+
+drop schema if exists (Databasename) // already delete shown an warning on console
+```
