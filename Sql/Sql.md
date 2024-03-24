@@ -1,5 +1,3 @@
-# SQL
-
 # **Database**
 
 A database is an organized collection of structured information or data, typically stored electronically in a computer system. Let me provide you with more details:
@@ -85,3 +83,15 @@ Examples of popular relational database management systems (RDBMS) include:
 - SQL Server ⇒ Microsoft
 - Oracle ⇒ IBM
 - PostgreSQL ⇒ Opensource
+
+# SQL REQUIRES
+
+```SQl
+/*
+  multiline command
+
+ /*
+
+ -- single line command
+
+```
