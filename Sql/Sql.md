@@ -156,7 +156,14 @@ Delete a database
 ```sql
 drop database code;  // delete a data base
 
-drop schema (Databasename) // delete a data base
+drop schema (Databasename);// delete a data base
 
-drop schema if exists (Databasename) // already delete shown an warning on console
+drop schema if exists (Databasename);// already delete shown an warning on console
+```
+
+use data base
+
+```sql
+USE (Data base name) ;
+SHOW TABLES;
 ```
