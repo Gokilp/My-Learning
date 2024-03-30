@@ -254,7 +254,6 @@ select * from emp;
 where is used to filter the records. The rows are filtered based on conditions.
 
 - **Query for Employee table** (click the initial arrow to expand)
-
   ```sql
   CREATE TABLE employee (
   emp_id INT PRIMARY KEY,
@@ -284,6 +283,47 @@ WHERE condition;
 ```
 
 Following can be used within the condition.
+
+|
+=
+|
+Equal
+|
+| --- | --- |
+|
+
+> |
+> Greater than
+> |
+> |
+> <
+> |
+> Less than
+> |
+> |
+> =
+> |
+> Greater than or equal
+> |
+> |
+> <=
+> |
+> Less than or equal
+> |
+> |
+> <>
+> |
+> Not equal. Note: In some versions of SQL
+> this operator may be written as !=
+> |
+> |
+> BETWEEN
+> |
+> Between a certain range
+> |
+> | LIKE | Search for a pattern |
+> | IN | To specify multiple possible values for a column |
+> | NOT | negation |
 
 | Operator | Description                                                                  |     |
 | -------- | ---------------------------------------------------------------------------- | --- |
@@ -338,4 +378,78 @@ LIMIT 5; --limits the records shown
 
 SELECT * FROM employee
 LIMIT 5;  -- Different syntax in oracle/sql server
+```
+
+## **Using Like and wildcards**
+
+LIKE is used with WHERE clause for searching a specific pattern in a column. It is used along with the following wild cards
+
+% represents zero or more characters
+
+\_ represents exactly one character
+
+```sql
+-- Filters names starting with 'A'
+SELECT * FROM employee
+WHERE ename LIKE 'A%';
+
+-- Filters names ending with 'A'
+SELECT * FROM employee
+WHERE ename LIKE '%A';
+
+-- Filters names starting with 'R' and ending with 'a'
+SELECT * FROM employee
+WHERE ename LIKE 'R%a';
+
+-- Filters names containing 'I'
+SELECT * FROM employee
+WHERE ename LIKE '%I%';
+
+-- Filters names with 'i' as the third character
+SELECT * FROM employee
+WHERE ename LIKE '__I%';
+
+-- Filters names starting with 'R%'
+SELECT * FROM employee
+WHERE ename LIKE 'R\%';
+
+-- Additional examples for clarity
+SELECT * FROM Customer
+WHERE CustomerName LIKE 'a%'; -- Finds any values that start with "a"
+
+SELECT * FROM Customer
+WHERE CustomerName LIKE '%a'; -- Finds any values that end with "a"
+
+SELECT * FROM Customer
+WHERE CustomerName LIKE '%or%'; -- Finds any values that have "or" in any position
+
+SELECT * FROM Customer
+WHERE CustomerName LIKE '_r%'; -- Finds any values that have "r" in the second position
+
+SELECT * FROM Customer
+WHERE CustomerName LIKE 'a_%_%'; -- Finds any values that start with "a" and are at least 3 characters in length
+
+SELECT * FROM Customer
+WHERE ContactName LIKE 'a%o'; -- Finds any values that start with "a" and end with "o"
+
+```
+
+## Update and Delete
+
+```sql
+UPDATE employee
+SET job_desc = "Analyst"; -- updates all job_desc of all rows to "Analyst" when safe update not enabled
+
+UPDATE employee
+SET job_desc = "Analyst"
+WHERE job_desc = "Engineer"; -- changes Engineer to Analyst in all applicable rows
+
+UPDATE employee
+SET job_desc = "Analyst"
+WHERE emp_id=1;
+
+DELETE FROM employee; -- deletes all rows
+
+DELETE from employee
+WHERE emp_id = 12;
 ```
