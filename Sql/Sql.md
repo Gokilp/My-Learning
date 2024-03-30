@@ -254,6 +254,7 @@ select * from emp;
 where is used to filter the records. The rows are filtered based on conditions.
 
 - **Query for Employee table** (click the initial arrow to expand)
+
   ```sql
   CREATE TABLE employee (
   emp_id INT PRIMARY KEY,
@@ -284,43 +285,57 @@ WHERE condition;
 
 Following can be used within the condition.
 
-|
-=
-|
-Equal
-|
-| --- | --- |
-|
+| Operator | Description                                                                  |     |
+| -------- | ---------------------------------------------------------------------------- | --- |
+| =        | Equal                                                                        |     |
+| >        | Greater than                                                                 |     |
+| <        | Less than                                                                    |     |
+| >=       | Greater than or equal                                                        |     |
+| <=       | Less than or equal                                                           |     |
+| <> or != | Not equal. Note: In some versions of SQL, this operator may be written as != |     |
+| BETWEEN  | Between a certain range                                                      |     |
+| LIKE     | Search for a pattern                                                         |     |
+| IN       | To specify multiple possible values for a column                             |     |
+| NOT      | Negation                                                                     |     |
 
-> |
-> Greater than
-> |
-> |
-> <
-> |
-> Less than
-> |
-> |
-> =
-> |
-> Greater than or equal
-> |
-> |
-> <=
-> |
-> Less than or equal
-> |
-> |
-> <>
-> |
-> Not equal. Note: In some versions of SQL
-> this operator may be written as !=
-> |
-> |
-> BETWEEN
-> |
-> Between a certain range
-> |
-> | LIKE | Search for a pattern |
-> | IN | To specify multiple possible values for a column |
-> | NOT | negation |
+## **Usage Examples**
+
+- **Equal**: **`column_name = value`**
+- **Greater than**: **`column_name > value`**
+- **Less than**: **`column_name < value`**
+- **Greater than or equal**: **`column_name >= value`**
+- **Less than or equal**: **`column_name <= value`**
+- **Not equal**: **`column_name <> value`** or **`column_name != value`**
+- **Between a certain range**: **`column_name BETWEEN value1 AND value2`**
+- **Search for a pattern**: **`column_name LIKE 'pattern'`**
+- **Specify multiple possible values**: **`column_name IN (value1, value2, ...)`**
+- **Negation**: **`NOT condition`**
+
+AND/OR can be used to combine the relational operators.
+
+```sql
+SELECT * FROM employee
+WHERE ename = 'Ramya';
+
+SELECT emp_id,ename,salary FROM employee
+WHERE salary>2000000;
+
+SELECT emp_id,ename,salary FROM employee
+WHERE salary<2600000 AND job_desc = 'MANAGER';
+
+SELECT * FROM employee
+WHERE job_desc='ADMIN' OR job_desc='HR'; -- though this works next command is a much better choice
+
+SELECT * FROM employee
+WHERE job_desc IN ('ADMIN','HR');
+
+SELECT * FROM employee
+WHERE job_desc NOT IN ('MANAGER','CEO');
+
+SELECT * FROM employee
+WHERE salary BETWEEN 2000000 AND 3000000
+LIMIT 5; --limits the records shown
+
+SELECT * FROM employee
+LIMIT 5;  -- Different syntax in oracle/sql server
+```
