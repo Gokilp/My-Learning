@@ -222,4 +222,29 @@ SELECT * FROM student; -- displays all rows and columns in the student table
 SELECT id,name FROM student; -- displays specific columns
 ```
 
-gpg --armor --export C9E916DC4A8E99FC
+Example
+
+```sql
+
+create database Employee;
+use Employee;
+create table emp(
+ emp_id Int primary key,
+ emp_name Varchar(20),
+ job_desc varchar(30),
+ salary  Int
+);
+
+INSERT INTO emp VALUES(001,"Gokil","SoftwareEng",25000);
+insert into emp values(002,"kalai","account",10000);
+insert into emp values (003,"vani","engineer",5000);
+insert  into emp values(004,"poorni","Datascience",500000);
+insert into emp values(005,"jana","throwball", 9000);
+insert into emp values(006,"Raja","painter",200000);
+insert into emp values(007,"roja","sqldev",15000);
+insert into emp values(008,"Ramu","webdev",1000000);
+insert into emp values(009,"Ramesh","andriod",60000);
+insert into emp values(010,"Raghul","carparenter",50000);
+
+select * from emp;
+```
