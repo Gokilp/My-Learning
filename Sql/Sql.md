@@ -14,15 +14,14 @@ SQL: Most databases use Structured Query Language (SQL) for writing and querying
 
 ## **Evolution of Databases:**
 
-1.
 1. **960s - Hierarchical Databases:** Organized data in tree-like structures (e.g., IBM's IMS).
-1. **Late 1960s to early 1970s - Network Databases:** Introduced many-to-many relationships (network model).
-1. **1970s - Relational Databases:** Edgar F. Codd's relational model with tables, keys, and relationships (e.g., Oracle, MySQL).
-1. **1970s - SQL (Structured Query Language):** Standard language for relational databases.
-1. **1980s to 1990s - Object-Oriented Databases:** Stored data in objects (OODBMS).
-1. **2000s onwards - NoSQL Databases:** Scalable, flexible solutions for unstructured data (e.g., MongoDB, Cassandra).
-1. **2010s onwards - NewSQL Databases:** Blend of SQL and NoSQL features for high-throughput workloads.
-1. **Present - Cloud and Serverless Databases:** Scalable, managed solutions in the cloud with serverless options (e.g., AWS RDS, Azure SQL Database, Google Cloud Spanner).
+2. **Late 1960s to early 1970s - Network Databases:** Introduced many-to-many relationships (network model).
+3. **1970s - Relational Databases:** Edgar F. Codd's relational model with tables, keys, and relationships (e.g., Oracle, MySQL).
+4. **1970s - SQL (Structured Query Language):** Standard language for relational databases.
+5. **1980s to 1990s - Object-Oriented Databases:** Stored data in objects (OODBMS).
+6. **2000s onwards - NoSQL Databases:** Scalable, flexible solutions for unstructured data (e.g., MongoDB, Cassandra).
+7. **2010s onwards - NewSQL Databases:** Blend of SQL and NoSQL features for high-throughput workloads.
+8. **Present - Cloud and Serverless Databases:** Scalable, managed solutions in the cloud with serverless options (e.g., AWS RDS, Azure SQL Database, Google Cloud Spanner).
 
 ## **Difference Between Databases and Spreadsheets:**
 
@@ -222,3 +221,5 @@ INSERT INTO student(id,name) VALUES(5,"Balaji"),(6,"Chandru"); -- inserts specif
 SELECT * FROM student; -- displays all rows and columns in the student table
 SELECT id,name FROM student; -- displays specific columns
 ```
+
+gpg --armor --export C9E916DC4A8E99FC
