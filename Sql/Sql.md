@@ -254,6 +254,7 @@ select * from emp;
 where is used to filter the records. The rows are filtered based on conditions.
 
 - **Query for Employee table** (click the initial arrow to expand)
+
   ```sql
   CREATE TABLE employee (
   emp_id INT PRIMARY KEY,
@@ -284,8 +285,8 @@ WHERE condition;
 
 Following can be used within the condition.
 
-|
-=
+# |
+
 |
 Equal
 |
