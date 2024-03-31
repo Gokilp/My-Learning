@@ -491,6 +491,14 @@ WHEN 'SALES' THEN 5
 ELSE 100 END);
 ```
 
+## **Copy Table**
+
+```sql
+INSERT INTO first_table_name [(column1, column2, ... columnN)]
+   SELECT column1, column2, ...columnN
+   FROM second_table_name
+```
+
 # Functions
 
 - Here is good source for learning all functions https://www.techonthenet.com/mysql/functions/index.php
@@ -530,3 +538,36 @@ FROM employee; -- formats the number to add comma. The second argument(0 here) r
 SELECT ename,LEFT(job_desc,4)
 FROM employee; -- returns only the first 4 characters of the ename
 ```
+
+# Using Date
+
+```sql
+ALTER TABLE employee ADD COLUMN Hire_Date DATE; -- adding hire_date column
+
+UPDATE  employee
+SET Hire_Date="2012-10-05"; -- updating hire_date
+
+UPDATE  employee
+SET Hire_Date="2014-10-05"
+WHERE job_desc = "ANALYST"; -- updating hire_date
+
+SELECT NOW(); -- Current date and time
+
+SELECT DATE(NOW()); -- current date
+
+SELECT CURDATE(); -- current system date
+
+SELECT DATE_FORMAT(CURDATE(),'%d/%m/%Y'); -- to change the display format. use %d %m and %y or %Y in required format.
+
+SELECT DATEDIFF(CURDATE(),'2020-01-01') DAYS; -- to calculate date difference
+```
+
+```sql
+SELECT CURDATE() 'start date',
+ DATE_ADD(CURDATE(),INTERVAL 1 DAY) 'one day later',
+ DATE_ADD(CURDATE(),INTERVAL 1 WEEK) 'one week later',
+ DATE_ADD(CURDATE(),INTERVAL 1 MONTH) 'one month later',x
+ DATE_ADD(CURDATE(),INTERVAL 1 YEAR) 'one year later';
+```
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f6af4f86-e292-4a52-ab82-e04aaf0e5824/Untitled.png)
