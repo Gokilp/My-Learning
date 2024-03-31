@@ -254,6 +254,7 @@ select * from emp;
 where is used to filter the records. The rows are filtered based on conditions.
 
 - **Query for Employee table** (click the initial arrow to expand)
+
   ```sql
   CREATE TABLE employee (
   emp_id INT PRIMARY KEY,
@@ -284,8 +285,8 @@ WHERE condition;
 
 Following can be used within the condition.
 
-|
-=
+# |
+
 |
 Equal
 |
@@ -571,3 +572,60 @@ SELECT CURDATE() 'start date',
 ```
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f6af4f86-e292-4a52-ab82-e04aaf0e5824/Untitled.png)
+
+## **Group By and Having**
+
+Group by is used to group the table based on conditions and analyze values within the group using aggregate functions.
+
+Where is used to filter the rows before grouping. Having is used to filter the groups.
+
+```sql
+SELECT job_desc,FORMAT(AVG(salary),0) avg_sal
+FROM employee
+GROUP BY job_desc; -- shows avg salary of each category within job_desc
+```
+
+!https://balanced-quince-db1.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F90713040-cf10-4909-bfec-aa1a171199f2%2FUntitled.png?table=block&id=19364555-a797-414e-afe8-650ab7bfed02&spaceId=4627f5b3-4dd8-4561-aea6-a8c1fd683e1f&width=420&userId=&cache=v2
+
+SELECT job_desc,COUNT(emp_id) count
+FROM employee
+GROUP BY job_desc; -- displays number of employees count in each job_desc category
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/4b633af2-d594-468b-b52f-9cf2eb4263f4/Untitled.png)
+
+!https://balanced-quince-db1.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa6bc517a-d3d2-4869-aca4-6a494fb61339%2FUntitled.png?table=block&id=662ce59a-c565-4292-9746-2ecd57ebf8de&spaceId=4627f5b3-4dd8-4561-aea6-a8c1fd683e1f&width=360&userId=&cache=v2
+
+```sql
+SELECT job_desc,COUNT(emp_id) AS count -- using as for aliasing
+FROM employee
+GROUP BY job_desc
+HAVING COUNT(emp_id)>1; --  displays number of employees count in each job_desc category only when count is greater than 1.
+```
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/6669f26d-45bf-4b72-8cf3-e1a9c70dd694/Untitled.png)
+
+```sql
+
+SELECT job_desc,COUNT(emp_id) AS count
+FROM employee
+GROUP BY job_desc
+HAVING COUNT(emp_id)>1
+ORDER BY job_desc;  -- same as above ordered by job_desc asc
+```
+
+```sql
+SELECT job_desc,COUNT(emp_id) AS count
+FROM employee
+GROUP BY job_desc
+HAVING COUNT(emp_id)>1
+ORDER BY COUNT(emp_id) DESC  -- same but ordered by Desc order of COUNT in each group
+```
+
+```sql
+SELECT job_desc,COUNT(emp_id) AS count
+FROM employee
+WHERE salary>1500000
+GROUP BY job_desc
+HAVING COUNT(emp_id)>1
+ORDER BY COUNT(emp_id) DESC; -- with additional filtering of salary> 15L. Only those with sal more than 15L is considered for grouping
+```
