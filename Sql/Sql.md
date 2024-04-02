@@ -387,7 +387,7 @@ LIKE is used with WHERE clause for searching a specific pattern in a column. It 
 
 % represents zero or more characters
 
-\_ represents exactly one character
+represents exactly one character
 
 ```sql
 -- Filters names starting with 'A'
@@ -398,7 +398,7 @@ WHERE ename LIKE 'A%';
 SELECT * FROM employee
 WHERE ename LIKE '%A';
 
--- Filters names starting with 'R' and ending with 'a'
+-- Filters names starting with 'R' and ending with a 'a'c
 SELECT * FROM employee
 WHERE ename LIKE 'R%a';
 
