@@ -88,11 +88,10 @@ Examples of popular relational database management systems (RDBMS) include:
 
 ```java
 /*
-  multiline command
-
+  multiline command line
  /*
 
- -- single line command
+ -- single command line
 
 ```
 
