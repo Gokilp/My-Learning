@@ -1,0 +1,20 @@
+body {
+  background-color: pink;
+}
+
+.container {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;   */  /* also given Pixels */
+   /* grid-template-columns: 1fr 1fr auto;   auto used automatocally for the grid size of page */ */
+   /* grid-template-columns : repeat(3,1fr); // Repately used frame sizres for grid 
+  column-gap:10px; // column gap
+  row-gap: 10px;     //row gap  */
+  grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
+    gap: 10px;
+
+}
+
+.para {
+  background-color: lightskyblue;
+  color: white;
+}
