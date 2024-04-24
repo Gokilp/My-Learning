@@ -16,7 +16,7 @@ function greet(callback) {
 
 greet(greetConsole);
 
-greet(greetHeading)
+greet(greetHeading);
 
 greet((name) => {
   const heading = document.querySelector("h1");
@@ -36,6 +36,7 @@ function print(val) {
 arr.forEach((val) => console.log(val.toUpperCase()));
 console.log(arr);
 
+// changing into oringial array of element's properties
 arr.forEach((val, index, arr) => {
   arr[index] = val.toUpperCase();
 });
@@ -52,6 +53,3 @@ arr.forEach((val) => {
 });
 
 console.clear();
-
-
-

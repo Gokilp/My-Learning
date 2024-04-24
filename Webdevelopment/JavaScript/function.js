@@ -78,6 +78,7 @@ console.log(findSum(arr));
 let volume = (l, b, h) => l * b * h;
 console.log(volume(7, 8, 9));
 
+// another method of arrow function
 let sumOfArr = (arr) => {
   let sum = 0;
   for (let val of arr) {
