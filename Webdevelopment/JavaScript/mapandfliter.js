@@ -1,5 +1,5 @@
-//map - executes callback for each array
-//      element and returns new array
+// //map - executes callback for each array
+// //      element and returns new array
 let priceUSD = [20, 35, 13];
 let priceINR = priceUSD.map((x) => x * 83);
 console.log(priceINR);
@@ -59,5 +59,22 @@ let count = arr2d.flat().reduce((accumulator, currVal) => {
   else accumulator[currVal] = 1;
   return accumulator;
 }, {});
+
+console.log(count);
+
+// using for each Funtion
+const fruit = [
+  { name: "Apple", no: 1 },
+  { name: "Banana", no: 2 },
+  { name: "Orange", no: 3 },
+  { name: "Gragers", no: 4 },
+  { name: "Mango", no: 5 }, // Corrected spelling to "Orange"
+];
+
+let count = 0;
+
+fruit.forEach((itemstotal) => {
+  count = count + itemstotal.no;
+});
 
 console.log(count);
