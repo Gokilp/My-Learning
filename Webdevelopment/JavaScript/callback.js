@@ -15,7 +15,8 @@ function greet(callback) {
 }
 
 greet(greetConsole);
-// greet(greetHeading)
+
+greet(greetHeading)
 
 greet((name) => {
   const heading = document.querySelector("h1");
@@ -51,3 +52,6 @@ arr.forEach((val) => {
 });
 
 console.clear();
+
+
+
