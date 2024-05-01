@@ -14,6 +14,6 @@ if(empty($userName)){
 }else{
     echo "This variable is not have a Value";
 }
-  
+
 ?>
 
