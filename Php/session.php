@@ -16,7 +16,7 @@ session_start();
     <title>Document</title>
 </head>
 <body>
-       <form actiom="hello.php" method = "post">
+       <form action="hello.php" method = "post">
            Username <br>
            <input type="text" name="Username"> <br>
              Password <br>
@@ -33,32 +33,42 @@ if (isset($_POST["login"])) {
         $_SESSION["Username"] = $_POST["Username"];
         $_SESSION["password"] = $_POST["password"];
 
-        header("Location:home.php");
+        header("Location:home.php"); // Redirection to  home.php page
     } else {
         echo "Invalid Username or Password";
     }
 }
 ?>
 
-// hello php code 
+// home page.php file
+    <?php
+    session_start();
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+    <p> This is Home  Page</p> <br>
+    <form action="home.php" method="post">
+        <input type="submit" name="logout" value="Logout">
+    </form>
+    </body>
+    </html>
+    <?php
+    echo $_SESSION["Username"] ;  // contain the session section Value
+    echo $_SESSION["password"];  // contain the session section Value
 
-<?php
-session_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<p> This is Loin  Page</p> <br>
-<a href="hello.php"> This is login page</a>
-</body>
-</html>
-<?php
-echo $_SESSION["Username"] ;
-echo $_SESSION["password"];
-?>
+      if(isset($_POST["logout"])){
+          session_destroy();   // destoryed Session value
+          header("location:hello.php");
+      }
+    ?>
+
+
+
+
 
