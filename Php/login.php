@@ -1,6 +1,6 @@
 // Login file using isset and empty function 
 // using post method collect php 
-
+// check given input empty or Having a value or not
 
 <!DOCTYPE html>
 <html lang="en">
