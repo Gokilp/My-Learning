@@ -31,5 +31,22 @@ if(isset($_POST["Login"])){
     $age = filter_input(INPUT_POST, "age", FILTER_SANITIZE_NUMBER_INT);
     $mail = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
 }
-echo "Your name is $username and age is $age. Mail is $mail";
+   if(empty(Susername)){
+       echo:"Invalid ";
+   }else{
+       echo "your Name is $username";
+   }
+if(empty($age)){
+    echo:"Invalid ";
+   }else{
+    echo "your Age is $age";
+   }
+if(empty($mail)){
+    echo "Invalid ";
+   }else{
+    echo "your Name is $mail";
+   }
+   
+   
 ?>
+
