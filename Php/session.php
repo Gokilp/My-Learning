@@ -67,8 +67,3 @@ if (isset($_POST["login"])) {
           header("location:hello.php");
       }
     ?>
-
-
-
-
-
