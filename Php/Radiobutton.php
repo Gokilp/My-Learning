@@ -3,9 +3,6 @@
 // using a Radio button 
 // check button click the user and print the screen in Value 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,12 +17,14 @@
       <input type="radio" name="CreditCard" value="Rupee"> Rupee<br>
       <input type="radio" name="CreditCard" value="Master"> Master<br>
       <input type="radio" name="CreditCard" value="cash"> Cash<br>
-      <input type="submit" name="submit" value="Confirm">
+      <input type="radio" name="CreditCard" value="AmercianExpress">AmercianExpress <br>
+      <input type="submit" name="CreditCard" value="Confirm">
   </form>
 
 
 </body>
 </html>
+
 <?php
 if(isset($_POST["CreditCard"])){
     $credit_Card = $_POST["CreditCard"];
@@ -34,8 +33,25 @@ if(isset($_POST["CreditCard"])){
         echo "You select cash";
     }
     else{
-        echo "You select credit Card $credit_Card";
+         switch($credit_Card){
+             case "visa":
+                 echo "You select visa";
+                 break;
+             case "Rupee":
+                 echo "You select Rupee";
+                 break;
+             case "Master":
+                 echo "You select Master";
+                 break;
+             case "AmercianExpress":
+                 echo "You select AmercianExpress";
+                 break;
+             default:
+                 echo "You selected Invalid";
+                 break;
+         }
     }
 }
 
 ?>
+
