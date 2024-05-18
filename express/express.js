@@ -121,8 +121,13 @@ app.get("/", function (req, res) {
 
 // post method => body
 app.post( "/", function(req, res) {
-    
-
+     const ishealthy = req.body.ishealthy;
+     users[0].Kidney.push({
+         healthy: ishealthy,
+     })
+     res.json({
+         message: "Kidney added successfully",
+     })
 
 });
 
