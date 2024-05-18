@@ -98,6 +98,7 @@ const users = [
   },
 ];
 
+app.use(express.json());
 // get => Query parameters
 app.get("/", function (req, res) {
   const JohnofKindey = users[0].Kidney;
@@ -121,9 +122,9 @@ app.get("/", function (req, res) {
 
 // post method => body
 app.post( "/", function(req, res) {
-     const ishealthy = req.body.ishealthy;
+     const ishealthy = req.body.isHealthy;
      users[0].Kidney.push({
-         healthy: ishealthy,
+         healthy: isHealthy,
      })
      res.json({
          message: "Kidney added successfully",
