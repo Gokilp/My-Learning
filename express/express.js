@@ -21,7 +21,7 @@ app.listen(3000, function () {
 
 */
 
-
+/*
 
 
 const express = require("express");
@@ -44,4 +44,90 @@ app.get("/", function (req, res) {
 
 app.listen(3000, function () {
   console.log("server is running on port 3000");
+});
+*/
+
+// const express = require("express");
+// const app = express();
+
+// const users = [{
+//     name: "John",
+//     Kidney: [{
+//         healthy: false,
+//     }],
+// }];
+
+// app.get("/", function (req, res) {
+//     const johnKidney = users[0].Kidney; // Access the Kidney array correctly
+//     const NumberofKidneys = johnKidney.length; // Get the length of the Kidney array
+//     let NumberofHealthyKidneys = 0;
+
+//     // Correct loop condition and iterate over the johnKidney array
+//     for (let i = 0; i < NumberofKidneys; i++) {
+//         if (johnKidney[i].healthy) {
+//             NumberofHealthyKidneys = NumberofHealthyKidneys + 1;
+//         }
+//     }
+
+//     // Calculate the number of unhealthy kidneys
+//     const NumberofUnhealthyKidneys = NumberofKidneys - NumberofHealthyKidneys;
+
+//     // Send the response as a JSON object
+//     res.json({
+//         NumberofKidneys,
+//         NumberofHealthyKidneys,
+//         NumberofUnhealthyKidneys,
+//     });
+// });
+
+// app.listen(3000, function () {
+//     console.log("Server is running on port 3000");
+// });
+
+const express = require("express");
+const app = express();
+
+const users = [
+  {
+    name: "John",
+    Kidney: [
+      {
+        healthy: false,
+      },
+    ],
+  },
+];
+
+// get => Query parameters
+app.get("/", function (req, res) {
+  const JohnofKindey = users[0].Kidney;
+  1;
+  const NumberofKidneys = JohnofKindey.length;
+  const NumberofHealthyKidneys = 0;
+
+  for (let i = 0; i < NumberofKidneys; i++) {
+    if (JohnofKindey[i].healthy) {
+      NumberofHealthyKidneys++;
+    }
+  }
+  const NumberofunhealthyKidney = NumberofKidneys - NumberofHealthyKidneys;
+
+  res.json({
+    NumberofKidneys,
+    NumberofHealthyKidneys,
+    NumberofunhealthyKidney,
+  });
+});
+
+// post method => body
+app.post( "/", function(req, res) {
+    
+
+
+});
+
+
+
+app.listen(3000, function () {
+  console.log("Server is running on port 3000");
 });
