@@ -61,7 +61,6 @@ function getData(dataId, getNextData) {
     }, 5000);
   });
 }
-
 const getPromise = () => {
   return new Promise((resolve, reject) => {
     console.log(" Hello world Programing");
@@ -89,7 +88,6 @@ const getPromise = (value) => {
 let value =0;
 let Result = getPromise(value);
 
-
 Result.then(() => {
   console.log("hey Success");
 });
@@ -97,3 +95,33 @@ Result.then(() => {
 Result.catch(() => {
   console.log(" not every ");
 });
+
+function api() {
+  return new Promise((reslove, reject) => {
+    setTimeout(() => {
+      console.log("Wheather data");
+      reslove("sucess");
+    });
+  });
+}
+
+async function getWheatherData() {
+  await api();
+  await api();
+}
+
+function getData(dataId) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("data", dataId);
+      resolve("success");
+    }, 2000);
+  });
+}
+
+async function getAllData() {
+  await getData(1);
+  await getData(2);
+  await getData(3);
+  await getData(4);
+}
