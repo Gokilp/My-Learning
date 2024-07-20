@@ -664,3 +664,141 @@ CONSTRAINT FK_branchId FOREIGN KEY(branch_id) REFERENCES branch(branch_id));
 -- droping FK
 ALTER TABLE employee
 DROP FOREIGN KEY FK_branchId;
+
+
+use data base name // chaning the current data base
+
+Show Database //  display all data base 
+
+Show tables // display all the table on data base 
+
+create Database logic frist; // create a database
+
+drop database or use schema Data base name  // delete  a data base  name 
+
+primary key unique for eg sno, country name, phone number, 
+
+
+// example create a table 
+
+create table student(
+ id int primary key, 
+ name varchar(20), 
+ gpa decimal(3,2)
+);  
+
+// remove the tables
+
+drop table name 
+
+// describe  the student 
+
+desc  student;
+
+// alter the  add table
+
+alter table (table name ) add (varible name);
+
+// alter the remove the table 
+
+alter table (table name) drop columns (variable name);
+
+
+//  insert the table
+
+insert into table name (variable name) values (), values (), ; 
+
+
+Example:
+
+create table Student(
+
+    id int primary key, 
+    name varchar(10) 
+);
+
+alter table Student add department varchar(20), add commerce varchar(30);
+alter table Student add course varchar(20);
+ alter table Student drop course;
+
+desc Student;
+ insert into Student  values (01,"Gokil","cs");
+
+insert into Student (id,name) values (02,"Ramu");
+insert into Student values (03,"Roja","cs");
+ insert into Student values (04,"Manjo","cs");
+ insert into Student values (05,"Mango","cs"),  (06,"krishna","cs"),(07,"Dhanush",null);
+
+select * from Student;
+
+
+ // where class usage in 
+
+-- select * from department where name <> 'gokil';
+
+-- select  name from department where name in ( 'gokil','Ramu');
+
+-- select name from department where name NOT IN ('Raana','bhanu');
+
+select * from department limit 5;
+
+
+//update 
+
+update table name
+set alter value 
+where condition;
+
+// delete 
+
+delete table name 
+where condition
+
+
+// Create a simple CRUD application 
+
+-- simple crud operation
+
+    -- create 
+create table tech_company(
+
+    Rollno varchar(20),
+    name varchar(20),
+    dep varchar(30),
+    salary int
+    
+);
+
+-- insert
+insert into tech_company (Rollno,name,dep,salary)values 
+    (01,'Gokil','engineer',10000),
+    (02,'Ram','designer',200000),
+    (03,'geetha','Account',3000000),
+    (04,'ram','carpenter',4000000),
+    (05,'rahu','tech-support',60000),
+    (06,'Ramu','tech-support',20000);
+
+
+-- Read
+
+select * from  tech_company; 
+
+-- update 
+update tech_company
+set name= 'Rekha'
+where name ='rahu';
+
+
+
+update tech_company
+set dep = 'bussiness Associate'
+where dep= 'tech-support';
+
+select * from tech_company;
+
+-- delete 
+
+delete from tech_company
+where Rollno = 06;
+
+select * from tech_company;
