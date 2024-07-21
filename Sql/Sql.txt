@@ -10,7 +10,6 @@ drop database or use schema Data base name  // delete  a data base  name
 
 primary key unique for eg sno, country name, phone number, 
 
-
 // example create a table 
 
 create table student(
@@ -134,6 +133,3 @@ delete from tech_company
 where Rollno = 06;
 
 select * from tech_company;
-
-
-
