@@ -1,187 +1,191 @@
-# **Database**
-
+Database
 A database is an organized collection of structured information or data, typically stored electronically in a computer system. Let me provide you with more details:
 
-## **Definition:**
-
+Definition:
 A database consists of data that is logically organized and efficiently managed. It can store various types of information, such as text, numbers, images, and more. Databases are usually controlled by a Database Management System (DBMS).
 
-## **Key Features:**
+Key Features:
+Structured Data: Data within databases is typically modeled in rows and columns, organized into tables for efficient processing and querying. Access and Management: Databases allow easy access, modification, and organization of data. SQL: Most databases use Structured Query Language (SQL) for writing and querying data.
 
-Structured Data: Data within databases is typically modeled in rows and columns, organized into tables for efficient processing and querying.
-Access and Management: Databases allow easy access, modification, and organization of data.
-SQL: Most databases use Structured Query Language (SQL) for writing and querying data.
+Evolution of Databases:
+1960s - Hierarchical Databases: Organized data in tree-like structures (e.g., IBM's IMS).
 
-## **Evolution of Databases:**
+Late 1960s to early 1970s - Network Databases: Introduced many-to-many relationships (network model).
 
-1. **960s - Hierarchical Databases:** Organized data in tree-like structures (e.g., IBM's IMS).
-2. **Late 1960s to early 1970s - Network Databases:** Introduced many-to-many relationships (network model).
-3. **1970s - Relational Databases:** Edgar F. Codd's relational model with tables, keys, and relationships (e.g., Oracle, MySQL).
-4. **1970s - SQL (Structured Query Language):** Standard language for relational databases.
-5. **1980s to 1990s - Object-Oriented Databases:** Stored data in objects (OODBMS).
-6. **2000s onwards - NoSQL Databases:** Scalable, flexible solutions for unstructured data (e.g., MongoDB, Cassandra).
-7. **2010s onwards - NewSQL Databases:** Blend of SQL and NoSQL features for high-throughput workloads.
-8. **Present - Cloud and Serverless Databases:** Scalable, managed solutions in the cloud with serverless options (e.g., AWS RDS, Azure SQL Database, Google Cloud Spanner).
+1970s - Relational Databases: Edgar F. Codd's relational model with tables, keys, and relationships (e.g., Oracle, MySQL).
 
-## **Difference Between Databases and Spreadsheets:**
+1970s - SQL (Structured Query Language): Standard language for relational databases.
 
+1980s to 1990s - Object-Oriented Databases: Stored data in objects (OODBMS).
+
+2000s onwards - NoSQL Databases: Scalable, flexible solutions for unstructured data (e.g., MongoDB, Cassandra).
+
+2010s onwards - NewSQL Databases: Blend of SQL and NoSQL features for high-throughput workloads.
+
+Present - Cloud and Serverless Databases: Scalable, managed solutions in the cloud with serverless options (e.g., AWS RDS, Azure SQL Database, Google Cloud Spanner).
+
+Difference Between Databases and Spreadsheets:
 Databases:
 
-- Designed for large collections of organized information.
-- Allow multiple users simultaneous access using complex logic and language.
-  Spreadsheets (e.g., Microsoft Excel):
-- Originally designed for single users.
-- Suitable for simpler data manipulation.
+Designed for large collections of organized information.
 
-# **DBMS**
+Allow multiple users simultaneous access using complex logic and language. Spreadsheets (e.g., Microsoft Excel):
 
-- Database Management System (DBMS) acts as an interface between the database and end-users.
-- It is software used to store, retrieve, define, and manage data in a database.
-- Supports easy CRUD operations (Create, Read, Update, Delete).
-- Manages authentication, concurrency, logging, backup, optimization, etc.
+Originally designed for single users.
 
-## **Types of Databases:**
+Suitable for simpler data manipulation.
 
-- **[Hierarchical databases](https://www.geeksforgeeks.org/hierarchical-model-in-dbms/)**
-- **[Network databases](https://www.geeksforgeeks.org/network-model-in-dbms/)**
-- **[Object-oriented databases](https://www.geeksforgeeks.org/difference-between-rdbms-and-oodbms/)**
-- **[Relational databases](https://www.geeksforgeeks.org/relational-model-in-dbms/)**
-- **[Cloud Database](https://www.geeksforgeeks.org/introduction-to-nosql-cloud-database-services/)**
-- **[Centralized Database](https://www.geeksforgeeks.org/comparison-centralized-decentralized-and-distributed-systems/)**
-- **[Operational Database](https://www.geeksforgeeks.org/differences-between-operational-database-systems-and-data-warehouse/)**
-- **[NoSQL databases](https://www.geeksforgeeks.org/introduction-to-nosql/)**
+DBMS
+Database Management System (DBMS) acts as an interface between the database and end-users.
 
-# Relational Data Base
+It is software used to store, retrieve, define, and manage data in a database.
 
+Supports easy CRUD operations (Create, Read, Update, Delete).
+
+Manages authentication, concurrency, logging, backup, optimization, etc.
+
+Types of Databases:
+Hierarchical databases
+
+Network databases
+
+Object-oriented databases
+
+Relational databases
+
+Cloud Database
+
+Centralized Database
+
+Operational Database
+
+NoSQL databases
+
+Relational Data Base
 A Relational Database is a type of database that organizes data into tables with predefined relationships between them. This type of database follows the relational model, which was first proposed by Edgar F. Codd in 1970. Relational databases are based on the principles of relational algebra and use Structured Query Language (SQL) for querying and managing data.
 
-### Key features of relational databases include:
+Key features of relational databases include:
+Tables: Data is stored in tables, where each table represents an entity (e.g., customers, products, orders) and consists of rows and columns. Each row in a table represents a record or instance of the entity, and each column represents an attribute or property of the entity.
 
-1. **Tables**: Data is stored in tables, where each table represents an entity (e.g., customers, products, orders) and consists of rows and columns. Each row in a table represents a record or instance of the entity, and each column represents an attribute or property of the entity.
-2. **Relationships**: Relational databases establish relationships between tables using keys. The primary key uniquely identifies each record in a table, while foreign keys establish links between related tables. Common types of relationships include one-to-one, one-to-many, and many-to-many.
-3. **Normalization**: Relational databases use normalization techniques to reduce redundancy and improve data integrity. Normalization involves organizing data into multiple related tables to avoid data duplication and inconsistencies.
-4. **ACID Properties**: Relational databases adhere to the ACID properties, which ensure data consistency, reliability, and atomicity. ACID stands for Atomicity, Consistency, Isolation, and Durability.
-5. **Structured Query Language (SQL)**: Relational databases use SQL for querying and manipulating data. SQL allows users to perform operations such as selecting, inserting, updating, and deleting data, as well as defining database structures and constraints.
+Relationships: Relational databases establish relationships between tables using keys. The primary key uniquely identifies each record in a table, while foreign keys establish links between related tables. Common types of relationships include one-to-one, one-to-many, and many-to-many.
+
+Normalization: Relational databases use normalization techniques to reduce redundancy and improve data integrity. Normalization involves organizing data into multiple related tables to avoid data duplication and inconsistencies.
+
+ACID Properties: Relational databases adhere to the ACID properties, which ensure data consistency, reliability, and atomicity. ACID stands for Atomicity, Consistency, Isolation, and Durability.
+
+Structured Query Language (SQL): Relational databases use SQL for querying and manipulating data. SQL allows users to perform operations such as selecting, inserting, updating, and deleting data, as well as defining database structures and constraints.
 
 Examples of popular relational database management systems (RDBMS) include:
 
-- MySQL: An open-source RDBMS widely used for web applications and small to medium-sized databases.
-- PostgreSQL: An open-source RDBMS known for its advanced features, scalability, and extensibility.
-- Oracle Database: A commercial RDBMS known for its robustness, scalability, and enterprise-level capabilities.
-- Microsoft SQL Server: A commercial RDBMS developed by Microsoft, commonly used in Windows-based environments and enterprise applications.
-- SQLite: A lightweight, embedded RDBMS suitable for mobile apps, IoT devices, and small-scale applications.
+MySQL: An open-source RDBMS widely used for web applications and small to medium-sized databases.
 
-# SQL?
+PostgreSQL: An open-source RDBMS known for its advanced features, scalability, and extensibility.
 
-- **SQL stands for Structured Query Language** and \**\*\*is a computer language that we use to interact with a relational database. SQL is a tool for *organizing*, *managing*, and *retrieving\* archived data from a computer database. The original name was given by IBM as Structured English Query Language, abbreviated by the acronym SEQUEL.
+Oracle Database: A commercial RDBMS known for its robustness, scalability, and enterprise-level capabilities.
 
-- When data needs to be retrieved from a database, SQL is used to make the request. The DBMS processes the SQL query retrieves the requested data and returns it to us. Rather, SQL statements describe how a collection of data should be organized or what data should be extracted or added to the database.
+Microsoft SQL Server: A commercial RDBMS developed by Microsoft, commonly used in Windows-based environments and enterprise applications.
 
-## SQL Data Base
+SQLite: A lightweight, embedded RDBMS suitable for mobile apps, IoT devices, and small-scale applications.
 
-- Mysql ⇒ Open Source
-- SQL Server ⇒ Microsoft
-- Oracle ⇒ IBM
-- PostgreSQL ⇒ Opensource
+SQL?
+SQL stands for Structured Query Language and ****is a computer language that we use to interact with a relational database. SQL is a tool for organizing, managing, and retrieving archived data from a computer database. The original name was given by IBM as Structured English Query Language, abbreviated by the acronym SEQUEL.
 
-# SQL REQUIRES
+When data needs to be retrieved from a database, SQL is used to make the request. The DBMS processes the SQL query retrieves the requested data and returns it to us. Rather, SQL statements describe how a collection of data should be organized or what data should be extracted or added to the database.
 
-```java
+SQL Data Base
+Mysql ⇒ Open Source
+
+SQL Server ⇒ Microsoft
+
+Oracle ⇒ IBM
+
+PostgreSQL ⇒ Opensource
+
+SQL REQUIRES
+
+COPY
+
+COPY
 /*
   multiline command line
  /*
 
  -- single command line
+DataTypes
+Character Data
+char - eg:char(5) stores fixed length string of length 5. Max 255 bytes.
 
-```
+varchar - eg:varchar(5) stores variable length string of length 5. Max 65535 bytes.
 
-# DataTypes
 
-## Character Data
+COPY
 
-**char** - eg:char(5) stores fixed length string of length 5. Max 255 bytes.
-
-**varchar** - eg:varchar(5) stores variable length string of length 5. Max 65535 bytes.
-
-```sql
+COPY
 SHOW CHARACTER SET; -- shows various character sets that are supported.
-```
-
 latin1 is the default character set. We can also choose a specific character set like below,
 
-```sql
+
+COPY
+
+COPY
 varchar(10) character set utf8    -- the particular column is set to utf8
 create database foreign_sales character set utf8;   -- entire database is set to utf8
-```
-
-## Text Data
-
+Text Data
 All images in the section are from Learning SQL by Alan Beaulieu
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f1879307-f804-4c4f-a8ab-d8ddc21ed525/Untitled.png)
 
-**BLOB** - Binary Large Object File → TinyBlob, Blob, MediumBlob, LongBlob
 
-## Numerical Data
+BLOB - Binary Large Object File → TinyBlob, Blob, MediumBlob, LongBlob
 
-**Whole Numbers:**
+Numerical Data
+Whole Numbers:BLOB - Binary Large Object File → TinyBlob, Blob, MediumBlob, LongBlob
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/0ad702d3-1df6-47dc-91f5-3f9138046019/Untitled.png)
+Numerical Data
+Whole Numbers:
 
-Tinyint is used to store Bool or Boolean \*\*\*\*
 
-**Decimal Numbers:**
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/7852ed89-95ba-4b8e-beb5-bab9a0ee31fe/Untitled.png)
+Tinyint is used to store Bool or Boolean
 
-## Temporal Data
+Decimal Numbers:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/6cd5ee5d-b207-46d1-9a1d-4dbc2ba5847e/Untitled.png)
 
-# Basic Query
+Temporal Data
 
-```sql
-show databases;   // show all the database
-```
 
-Create a database
+Basic Queries
+Database queries
 
-```sql
-create database (Databasename);  // create a database
-```
+COPY
 
-Delete a database
+COPY
+CREATE DATABASE LOGICFIRST; -- creates a new database
+-- TO DELETE A DATABASE
+DROP DATABASE LOGICFIRST;
+DROP SCHEMA LOGICFIRST; -- same as above. u can use DATABASE Or SCHEMA
+DROP SCHEMA IF EXISTS LOGICFIRST; -- prevents error if db not found
 
-```sql
-drop database code;  // delete a data base
+SHOW DATABASES; -- shows all the databases
+SHOW SCHEMAS; -- same as above. shows schemas/db
 
-drop schema (Databasename);// delete a data base
-
-drop schema if exists (Databasename);// already delete shown an warning on console
-```
-
-use data base
-
-```sql
-USE (Data base name) ;
-SHOW TABLES;  // show all the tables
-
-```
-
-## Table - Create,Delete,Alter
-
+USE SYS; -- uses this database for all further commands
+SHOW TABLES;-- shows all tables in the database being used
+Table - Create,Delete,Alter
 primary key - uniquely identifies a row in a table
 
-```sql
+
+COPY
+
+COPY
 //creating a table
 CREATE TABLE student(
-	id INT PRIMARY KEY,
+    id INT PRIMARY KEY,
     name VARCHAR(30),
     gpa DECIMAL(3,2)
 );
 -- ----or-----
-CREATE TABLE student(
-	id INT,
+CREATE TABLE student( 
+    id INT,
     name VARCHAR(30),
     gpa DECIMAL(3,2),
     PRIMARY KEY(id)
@@ -196,12 +200,11 @@ ALTER TABLE student ADD department VARCHAR(5); -- Adds a new column department t
 ALTER TABLE student DROP COLUMN department; -- drops the department column from student table
 -- ---or---
 ALTER TABLE student DROP department; -- same as above
+Inserting Data
 
-```
+COPY
 
-## Inserting Data
-
-```sql
+COPY
 INSERT INTO student VALUES(1,"Aarthi",7.6);
 INSERT INTO student VALUES(2,"Anitha",8.5); -- inserts a row. give values in column order
 
@@ -211,50 +214,22 @@ INSERT INTO student VALUES
 (5,"Ashwin",7.6); -- inserts more than one row
 
 INSERT INTO student(id,name) VALUES(5,"Balaji"),(6,"Chandru"); -- inserts specific columns.
+select
 
-```
+COPY
 
-## Select
-
-```sql
+COPY
 SELECT * FROM student; -- displays all rows and columns in the student table
 SELECT id,name FROM student; -- displays specific columns
-```
-
-Example
-
-```sql
-
-create database Employee;
-use Employee;
-create table emp(
- emp_id Int primary key,
- emp_name Varchar(20),
- job_desc varchar(30),
- salary  Int
-);
-
-INSERT INTO emp VALUES(001,"Gokil","SoftwareEng",25000);
-insert into emp values(002,"kalai","account",10000);
-insert into emp values (003,"vani","engineer",5000);
-insert  into emp values(004,"poorni","Datascience",500000);
-insert into emp values(005,"jana","throwball", 9000);
-insert into emp values(006,"Raja","painter",200000);
-insert into emp values(007,"roja","sqldev",15000);
-insert into emp values(008,"Ramu","webdev",1000000);
-insert into emp values(009,"Ramesh","andriod",60000);
-insert into emp values(010,"Raghul","carparenter",50000);
-
-select * from emp;
-```
-
-# Where Clause and Conditions
-
+Where Clause and Conditions
 where is used to filter the records. The rows are filtered based on conditions.
 
-- **Query for Employee table** (click the initial arrow to expand)
+Query for Employee table (click the initial arrow to expand)
 
-  ```sql
+
+COPY
+
+COPY
   CREATE TABLE employee (
   emp_id INT PRIMARY KEY,
   ename VARCHAR(30),
@@ -274,169 +249,84 @@ where is used to filter the records. The rows are filtered based on conditions.
   INSERT INTO employee VALUES(11,'Akshay','ENGINEER',1000000);
   INSERT INTO employee VALUES(12,'John','ADMIN',2200000);
   INSERT INTO employee VALUES(13,'Abinaya','ENGINEER',2100000);
-  ```
+select the table check the condition on " Where"
 
-```sql
+
+COPY
+
+COPY
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
-```
-
-Following can be used within the condition.
-
-# |
-
-|
-Equal
-|
-| --- | --- |
-|
-
-> |
-> Greater than
-> |
-> |
-> <
-> |
-> Less than
-> |
-> |
-> =
-> |
-> Greater than or equal
-> |
-> |
-> <=
-> |
-> Less than or equal
-> |
-> |
-> <>
-> |
-> Not equal. Note: In some versions of SQL
-> this operator may be written as !=
-> |
-> |
-> BETWEEN
-> |
-> Between a certain range
-> |
-> | LIKE | Search for a pattern |
-> | IN | To specify multiple possible values for a column |
-> | NOT | negation |
-
-| Operator | Description                                                                  |     |
-| -------- | ---------------------------------------------------------------------------- | --- |
-| =        | Equal                                                                        |     |
-| >        | Greater than                                                                 |     |
-| <        | Less than                                                                    |     |
-| >=       | Greater than or equal                                                        |     |
-| <=       | Less than or equal                                                           |     |
-| <> or != | Not equal. Note: In some versions of SQL, this operator may be written as != |     |
-| BETWEEN  | Between a certain range                                                      |     |
-| LIKE     | Search for a pattern                                                         |     |
-| IN       | To specify multiple possible values for a column                             |     |
-| NOT      | Negation                                                                     |     |
-
-## **Usage Examples**
-
-- **Equal**: **`column_name = value`**
-- **Greater than**: **`column_name > value`**
-- **Less than**: **`column_name < value`**
-- **Greater than or equal**: **`column_name >= value`**
-- **Less than or equal**: **`column_name <= value`**
-- **Not equal**: **`column_name <> value`** or **`column_name != value`**
-- **Between a certain range**: **`column_name BETWEEN value1 AND value2`**
-- **Search for a pattern**: **`column_name LIKE 'pattern'`**
-- **Specify multiple possible values**: **`column_name IN (value1, value2, ...)`**
-- **Negation**: **`NOT condition`**
-
+Symbol	Description
+\=	Equal
+\>	Greater than
+<	Less than
+\>=	Greater than or equal
+<=	Less than or equal
+<>	Not equal. Note: In some versions of SQL, this operator may be written as !=
+BETWEEN	Between a certain range
+LIKE	Search for a pattern
+IN	To specify multiple possible values for a column
+NOT	Negation
 AND/OR can be used to combine the relational operators.
 
-```sql
+
+COPY
+
+COPY
 SELECT * FROM employee
-WHERE ename = 'Ramya';
+WHERE ename = 'Ramya'; 
 
 SELECT emp_id,ename,salary FROM employee
-WHERE salary>2000000;
+WHERE salary>2000000; 
 
 SELECT emp_id,ename,salary FROM employee
-WHERE salary<2600000 AND job_desc = 'MANAGER';
+WHERE salary<2600000 AND job_desc = 'MANAGER'; 
 
 SELECT * FROM employee
 WHERE job_desc='ADMIN' OR job_desc='HR'; -- though this works next command is a much better choice
 
 SELECT * FROM employee
-WHERE job_desc IN ('ADMIN','HR');
+WHERE job_desc IN ('ADMIN','HR'); 
 
 SELECT * FROM employee
 WHERE job_desc NOT IN ('MANAGER','CEO');
 
 SELECT * FROM employee
 WHERE salary BETWEEN 2000000 AND 3000000
-LIMIT 5; --limits the records shown
+LIMIT 5; --limits the records shown 
 
 SELECT * FROM employee
 LIMIT 5;  -- Different syntax in oracle/sql server
-```
-
-## **Using Like and wildcards**
-
+Using Like and wildcards
 LIKE is used with WHERE clause for searching a specific pattern in a column. It is used along with the following wild cards
 
 % represents zero or more characters
 
-represents exactly one character
 
-```sql
--- Filters names starting with 'A'
+COPY
+
+COPY
 SELECT * FROM employee
-WHERE ename LIKE 'A%';
+WHERE ename LIKE 'A%'; -- filters name starting with A
 
--- Filters names ending with 'A'
 SELECT * FROM employee
-WHERE ename LIKE '%A';
+WHERE ename LIKE 'R%a'; -- filters name starting WITH R AND ending with a
 
--- Filters names starting with 'R' and ending with a 'a'c
 SELECT * FROM employee
-WHERE ename LIKE 'R%a';
+WHERE ename LIKE '%I%'; -- filters name containing I
 
--- Filters names containing 'I'
 SELECT * FROM employee
-WHERE ename LIKE '%I%';
+WHERE ename LIKE '__I%'; -- filters name with i as third character
 
--- Filters names with 'i' as the third character
 SELECT * FROM employee
-WHERE ename LIKE '__I%';
+WHERE ename LIKE 'R\%'; -- filters name starting with R%. \ is the escape character.
+Update and Delete
 
--- Filters names starting with 'R%'
-SELECT * FROM employee
-WHERE ename LIKE 'R\%';
+COPY
 
--- Additional examples for clarity
-SELECT * FROM Customer
-WHERE CustomerName LIKE 'a%'; -- Finds any values that start with "a"
-
-SELECT * FROM Customer
-WHERE CustomerName LIKE '%a'; -- Finds any values that end with "a"
-
-SELECT * FROM Customer
-WHERE CustomerName LIKE '%or%'; -- Finds any values that have "or" in any position
-
-SELECT * FROM Customer
-WHERE CustomerName LIKE '_r%'; -- Finds any values that have "r" in the second position
-
-SELECT * FROM Customer
-WHERE CustomerName LIKE 'a_%_%'; -- Finds any values that start with "a" and are at least 3 characters in length
-
-SELECT * FROM Customer
-WHERE ContactName LIKE 'a%o'; -- Finds any values that start with "a" and end with "o"
-
-```
-
-## Update and Delete
-
-```sql
+COPY
 UPDATE employee
 SET job_desc = "Analyst"; -- updates all job_desc of all rows to "Analyst" when safe update not enabled
 
@@ -452,19 +342,18 @@ DELETE FROM employee; -- deletes all rows
 
 DELETE from employee
 WHERE emp_id = 12;
-```
+Distinct
 
-## **Distinct**
+COPY
 
-```sql
-
+COPY
 SELECT DISTINCT job_desc
 FROM employee; -- shows only distinct values without duplicates
-```
+Order By
 
-## **Order By**
+COPY
 
-```sql
+COPY
 SELECT * FROM employee
 ORDER BY salary; -- order by salary asc
 
@@ -489,27 +378,28 @@ WHEN 'HR' THEN 3
 WHEN 'ANALYST' THEN 4
 WHEN 'SALES' THEN 5
 ELSE 100 END);
-```
+Copy Table
 
-## **Copy Table**
+COPY
 
-```sql
-INSERT INTO first_table_name [(column1, column2, ... columnN)]
-   SELECT column1, column2, ...columnN
+COPY
+INSERT INTO first_table_name [(column1, column2, ... columnN)] 
+   SELECT column1, column2, ...columnN 
    FROM second_table_name
-```
+Functions
+Here is good source for learning all functions https://www.techonthenet.com/mysql/functions/index.php
 
-# Functions
+aggregate functions https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html
 
-- Here is good source for learning all functions https://www.techonthenet.com/mysql/functions/index.php
-  aggregate functions https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html
 
-```sql
+COPY
+
+COPY
 SELECT COUNT(*) FROM employee; -- total count of entries in the table
 
 SELECT AVG(salary) FROM employee; -- avg salary of all employees
 
-SELECT AVG(salary)
+SELECT AVG(salary) 
 FROM employee
 WHERE job_desc="MANAGER"; -- avg salary of managers
 
@@ -519,7 +409,7 @@ WHERE job_desc="ANALYST"; -- total salary given to all analysts
 
 SELECT * FROM employee
 WHERE salary = (SELECT MAX(salary)
-FROM employee);  -- display the employee with
+FROM employee);  -- display the employee with 
 
 SELECT MIN(salary) FROM employee;
 
@@ -527,7 +417,7 @@ SELECT UCASE(ename),salary
 FROM employee; -- uppercase
 
 SELECT ename,CHAR_LENGTH(ename)
-FROM employee;
+FROM employee; 
 
 SELECT ename,CONCAT("Rs.",salary)
 FROM employee; -- adds Rs. to the beginning of salary
@@ -537,12 +427,13 @@ FROM employee; -- formats the number to add comma. The second argument(0 here) r
 
 SELECT ename,LEFT(job_desc,4)
 FROM employee; -- returns only the first 4 characters of the ename
-```
+Using Date
 
-# Using Date
+COPY
 
-```sql
+COPY
 ALTER TABLE employee ADD COLUMN Hire_Date DATE; -- adding hire_date column
+
 
 UPDATE  employee
 SET Hire_Date="2012-10-05"; -- updating hire_date
@@ -551,7 +442,7 @@ UPDATE  employee
 SET Hire_Date="2014-10-05"
 WHERE job_desc = "ANALYST"; -- updating hire_date
 
-SELECT NOW(); -- Current date and time
+SELECT NOW(); -- Current date and time 
 
 SELECT DATE(NOW()); -- current date
 
@@ -560,77 +451,71 @@ SELECT CURDATE(); -- current system date
 SELECT DATE_FORMAT(CURDATE(),'%d/%m/%Y'); -- to change the display format. use %d %m and %y or %Y in required format.
 
 SELECT DATEDIFF(CURDATE(),'2020-01-01') DAYS; -- to calculate date difference
-```
 
-```sql
 SELECT CURDATE() 'start date',
  DATE_ADD(CURDATE(),INTERVAL 1 DAY) 'one day later',
  DATE_ADD(CURDATE(),INTERVAL 1 WEEK) 'one week later',
  DATE_ADD(CURDATE(),INTERVAL 1 MONTH) 'one month later',x
  DATE_ADD(CURDATE(),INTERVAL 1 YEAR) 'one year later';
-```
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/f6af4f86-e292-4a52-ab82-e04aaf0e5824/Untitled.png)
 
-## **Group By and Having**
-
+Group By and Having
 Group by is used to group the table based on conditions and analyze values within the group using aggregate functions.
 
 Where is used to filter the rows before grouping. Having is used to filter the groups.
 
-```sql
+
+COPY
+
+COPY
 SELECT job_desc,FORMAT(AVG(salary),0) avg_sal
 FROM employee
 GROUP BY job_desc; -- shows avg salary of each category within job_desc
-```
 
-!https://balanced-quince-db1.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F90713040-cf10-4909-bfec-aa1a171199f2%2FUntitled.png?table=block&id=19364555-a797-414e-afe8-650ab7bfed02&spaceId=4627f5b3-4dd8-4561-aea6-a8c1fd683e1f&width=420&userId=&cache=v2
 
+
+COPY
+
+COPY
 SELECT job_desc,COUNT(emp_id) count
 FROM employee
 GROUP BY job_desc; -- displays number of employees count in each job_desc category
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/4b633af2-d594-468b-b52f-9cf2eb4263f4/Untitled.png)
 
-!https://balanced-quince-db1.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa6bc517a-d3d2-4869-aca4-6a494fb61339%2FUntitled.png?table=block&id=662ce59a-c565-4292-9746-2ecd57ebf8de&spaceId=4627f5b3-4dd8-4561-aea6-a8c1fd683e1f&width=360&userId=&cache=v2
 
-```sql
-SELECT job_desc,COUNT(emp_id) AS count -- using as for aliasing
+COPY
+
+COPY
+ELECT job_desc,COUNT(emp_id) AS count -- using as for aliasing
 FROM employee
 GROUP BY job_desc
 HAVING COUNT(emp_id)>1; --  displays number of employees count in each job_desc category only when count is greater than 1.
-```
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/2603bb63-fafb-446c-b8a4-918eec11024e/6669f26d-45bf-4b72-8cf3-e1a9c70dd694/Untitled.png)
-
-```sql
 
 SELECT job_desc,COUNT(emp_id) AS count
 FROM employee
 GROUP BY job_desc
 HAVING COUNT(emp_id)>1
 ORDER BY job_desc;  -- same as above ordered by job_desc asc
-```
 
-```sql
 SELECT job_desc,COUNT(emp_id) AS count
 FROM employee
 GROUP BY job_desc
 HAVING COUNT(emp_id)>1
 ORDER BY COUNT(emp_id) DESC  -- same but ordered by Desc order of COUNT in each group
-```
 
-```sql
 SELECT job_desc,COUNT(emp_id) AS count
 FROM employee
 WHERE salary>1500000
 GROUP BY job_desc
 HAVING COUNT(emp_id)>1
 ORDER BY COUNT(emp_id) DESC; -- with additional filtering of salary> 15L. Only those with sal more than 15L is considered for grouping
-```
-
 Constraints
 NOT NULL, AUTO_INCREMENT, DEFAULT, CHECK, UNIQUE
+
+
+COPY
+
+COPY
 CREATE TABLE employee (
 emp_id INT PRIMARY KEY AUTO_INCREMENT, -- id will be auto incremented for new rows
 ename VARCHAR(30) NOT NULL, -- null value cannot be inserted for the column
@@ -642,9 +527,13 @@ CHECK (salary>100000));
 INSERT INTO employee(ename,salary) VALUES ('Ramya',1000000);
 INSERT INTO employee(ename,salary) VALUES ('Riya',10000); -- erros because of violation of salary check constraint
 SELECT * FROM employee;
-
 Foreign Key
 Foreign key is a field in one table referring to the primary key of another table.
+
+
+COPY
+
+COPY
 
 -- drop previously created tables and create a branch table
 CREATE TABLE branch (
@@ -664,141 +553,221 @@ CONSTRAINT FK_branchId FOREIGN KEY(branch_id) REFERENCES branch(branch_id));
 -- droping FK
 ALTER TABLE employee
 DROP FOREIGN KEY FK_branchId;
+Index
+Index are used for fast lookups. Speeds up select query but delays insert/update. Also take up more memory.
 
 
-use data base name // chaning the current data base
+COPY
 
-Show Database //  display all data base 
+COPY
+SHOW INDEX FROM employee; -- show current indices
 
-Show tables // display all the table on data base 
+CREATE INDEX name_index ON employee(ename); -- creates a new index
 
-create Database logic frist; // create a database
+ALTER TABLE employee
+DROP INDEX name_index; -- drop index
 
-drop database or use schema Data base name  // delete  a data base  name 
+ALTER TABLE employee
+ADD INDEX(ename); -- create index using alter command
+On Delete
 
-primary key unique for eg sno, country name, phone number, 
+COPY
 
-
-// example create a table 
-
-create table student(
- id int primary key, 
- name varchar(20), 
- gpa decimal(3,2)
-);  
-
-// remove the tables
-
-drop table name 
-
-// describe  the student 
-
-desc  student;
-
-// alter the  add table
-
-alter table (table name ) add (varible name);
-
-// alter the remove the table 
-
-alter table (table name) drop columns (variable name);
-
-
-//  insert the table
-
-insert into table name (variable name) values (), values (), ; 
-
-
-Example:
-
-create table Student(
-
-    id int primary key, 
-    name varchar(10) 
+COPY
+CREATE TABLE employee (
+emp_id INT PRIMARY KEY AUTO_INCREMENT,
+ename VARCHAR(30) NOT NULL,
+job_desc VARCHAR(20),
+salary INT,
+branch_id INT,
+CONSTRAINT FK_branchId FOREIGN KEY(branch_id) REFERENCES branch(branch_id) 
+ON DELETE CASCADE -- on deleting a row in branch table, the corresponding entries in employee table will be deleted
 );
 
-alter table Student add department varchar(20), add commerce varchar(30);
-alter table Student add course varchar(20);
- alter table Student drop course;
-
-desc Student;
- insert into Student  values (01,"Gokil","cs");
-
-insert into Student (id,name) values (02,"Ramu");
-insert into Student values (03,"Roja","cs");
- insert into Student values (04,"Manjo","cs");
- insert into Student values (05,"Mango","cs"),  (06,"krishna","cs"),(07,"Dhanush",null);
-
-select * from Student;
+CREATE TABLE employee (
+emp_id INT PRIMARY KEY AUTO_INCREMENT,
+ename VARCHAR(30) NOT NULL,
+job_desc VARCHAR(20),
+salary INT,
+branch_id INT,
+CONSTRAINT FK_branchId FOREIGN KEY(branch_id) REFERENCES branch(branch_id) 
+ON DELETE SET NULL -- on deleting a row in branch table, the branchid corresponding entries in employee table will be made null
+);
+Joins
+Joins are used to join columns from two tables
 
 
- // where class usage in 
+COPY
 
--- select * from department where name <> 'gokil';
+COPY
+DROP TABLE employee; -- drop and freshly create
 
--- select  name from department where name in ( 'gokil','Ramu');
+CREATE TABLE branch (
+branch_id INT PRIMARY KEY AUTO_INCREMENT,
+br_name VARCHAR(30) NOT NULL,
+addr VARCHAR(200) );
 
--- select name from department where name NOT IN ('Raana','bhanu');
-
-select * from department limit 5;
-
-
-//update 
-
-update table name
-set alter value 
-where condition;
-
-// delete 
-
-delete table name 
-where condition
-
-
-// Create a simple CRUD application 
-
--- simple crud operation
-
-    -- create 
-create table tech_company(
-
-    Rollno varchar(20),
-    name varchar(20),
-    dep varchar(30),
-    salary int
-    
+CREATE TABLE employee (
+emp_id INT PRIMARY KEY AUTO_INCREMENT,
+ename VARCHAR(30) NOT NULL,
+job_desc VARCHAR(20),
+salary INT,
+branch_id INT,
+CONSTRAINT FK_branchId FOREIGN KEY(branch_id) REFERENCES branch(branch_id)
 );
 
--- insert
-insert into tech_company (Rollno,name,dep,salary)values 
-    (01,'Gokil','engineer',10000),
-    (02,'Ram','designer',200000),
-    (03,'geetha','Account',3000000),
-    (04,'ram','carpenter',4000000),
-    (05,'rahu','tech-support',60000),
-    (06,'Ramu','tech-support',20000);
+INSERT INTO branch VALUES(1,"Chennai","16 ABC Road");
+INSERT INTO branch VALUES(2,"Coimbatore","120 15th Block");
+INSERT INTO branch VALUES(3,"Mumbai","25 XYZ Road");
+INSERT INTO branch VALUES(4,"Hydrabad","32 10th Street");
+
+INSERT INTO employee VALUES(1,'Ram','ADMIN',1000000,2);
+INSERT INTO employee VALUES(2,'Harini','MANAGER',2500000,2);
+INSERT INTO employee VALUES(3,'George','SALES',2000000,1);
+INSERT INTO employee VALUES(4,'Ramya','SALES',1300000,2);
+INSERT INTO employee VALUES(5,'Meena','HR',2000000,3);
+INSERT INTO employee VALUES(6,'Ashok','MANAGER',3000000,1);
+INSERT INTO employee VALUES(7,'Abdul','HR',2000000,1);
+INSERT INTO employee VALUES(8,'Ramya','ENGINEER',1000000,2);
+INSERT INTO employee VALUES(9,'Raghu','CEO',8000000,3);
+INSERT INTO employee VALUES(10,'Arvind','MANAGER',2800000,3);
+INSERT INTO employee VALUES(11,'Akshay','ENGINEER',1000000,1);
+INSERT INTO employee VALUES(12,'John','ADMIN',2200000,1);
+INSERT INTO employee VALUES(13,'Abinaya','ENGINEER',2100000,2);
+INSERT INTO employee VALUES(14,'Vidya','ADMIN',2200000,NULL);
+INSERT INTO employee VALUES(15,'Ranjani','ENGINEER',2100000,NULL);
+
+SELECT * FROM employee;
+SELECT * FROM branch;
+
+-- inner join: only matching rows
+SELECT employee.emp_id,employee.ename,employee.job_desc,branch.br_name
+FROM employee
+INNER JOIN branch
+ON employee.branch_id=branch.branch_id
+ORDER BY emp_id;
+
+-- below query gives same result without using join keyword
+SELECT employee.emp_id,employee.ename,employee.job_desc,branch.br_name
+FROM employee,branch
+WHERE employee.branch_id=branch.branch_id
+ORDER BY emp_id;
+
+-- using table name alias
+SELECT e.emp_id,e.ename,e.job_desc,b.br_name
+FROM employee AS e
+INNER JOIN branch AS b
+ON e.branch_id=b.branch_id
+ORDER BY e.emp_id;
+
+-- Right join is matched rows + all other rows in right table
+SELECT employee.emp_id,employee.ename,employee.job_desc,branch.br_name
+FROM employee
+RIGHT JOIN branch
+ON employee.branch_id=branch.branch_id
+ORDER BY emp_id;
+
+-- Left join is matched rows with all other rows in left table 
+SELECT employee.emp_id,employee.ename,employee.job_desc,branch.br_name
+FROM employee
+LEFT JOIN branch
+ON employee.branch_id=branch.branch_id
+ORDER BY emp_id;
+
+-- Cross join joins each row of first table with every other row of second table
+SELECT employee.emp_id,employee.ename,employee.job_desc,branch.br_name
+FROM employee
+CROSS JOIN branch;
+
+-- displays the employee count in each branch
+SELECT b.br_name,COUNT(e.emp_id)
+FROM branch as b
+JOIN employee as e
+ON b.branch_id = e.branch_id
+GROUP BY e.branch_id;
+Union
+union combines two table having equal number of columns and matching datatypes
 
 
--- Read
+COPY
 
-select * from  tech_company; 
+COPY
+-- create client table similar to branch table
+CREATE TABLE clients (
+client_id INT PRIMARY KEY AUTO_INCREMENT,
+location VARCHAR(30) NOT NULL,
+addr VARCHAR(200) );
 
--- update 
-update tech_company
-set name= 'Rekha'
-where name ='rahu';
+INSERT INTO clients VALUES(1,"NewYork","25 10th Block");
+INSERT INTO clients VALUES(2,"Coimbatore","120 15th Block");
+INSERT INTO clients VALUES(3,"London","21 ABC Road");
+
+-- combines the two tables removing duplicates
+SELECT * FROM branch
+UNION 
+SELECT * FROM clients;
+
+-- combines the two tables without removing duplicates
+SELECT * FROM branch
+UNION ALL
+SELECT * FROM clients;
+Subqueries, Exists, Any, All
+Subqueries combine more than 2 queries.
 
 
+COPY
 
-update tech_company
-set dep = 'bussiness Associate'
-where dep= 'tech-support';
+COPY
+-- Displays employee list in Chennai Branch
+SELECT * FROM employee
+WHERE branch_id = (SELECT branch_id
+FROM branch
+WHERE br_name="Chennai");
 
-select * from tech_company;
+-- Displays the employees with min salary
+SELECT * FROM employee
+WHERE salary = (SELECT MIN(salary)
+FROM employee);
 
--- delete 
+    - displays the branches containing atleast one admin
+SELECT branch_id,br_name
+FROM branch
+WHERE EXISTS 
+( SELECT * FROM employee
+WHERE job_desc="ADMIN" AND branch.branch_id = employee.branch_id);
 
-delete from tech_company
-where Rollno = 06;
+-- displays the branch info in which any employee gets more than 25L
+SELECT branch_id,br_name
+FROM branch
+WHERE branch_id = ANY
+(SELECT branch_id FROM employee
+WHERE salary>2500000);
 
-select * from tech_company;
+-- displays employees not working in chennai or coimbatore
+
+SELECT * FROM employee 
+WHERE branch_id <> ALL ( SELECT branch_id FROM branch
+WHERE br_name IN ("Chennai","Coimbatore"));
+Views
+
+COPY
+
+COPY
+CREATE VIEW emp_br
+AS
+SELECT employee.emp_id,employee.ename,employee.job_desc,branch.br_name
+FROM employee
+INNER JOIN branch
+ON employee.branch_id=branch.branch_id
+ORDER BY emp_id;
+
+SELECT * FROM emp_br; -- selecting all rows from view
+
+DROP VIEW emp_br; -- delete view
+
+CREATE OR REPLACE VIEW emp_br  -- modify view
+AS 
+SELECT employee.emp_id,employee.ename,employee.job_desc,branch.br_name
+FROM employee
+INNER JOIN branch
+ON employee.branch_id=branch.branch_id;
