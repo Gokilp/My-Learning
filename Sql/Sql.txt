@@ -119,8 +119,6 @@ update tech_company
 set name= 'Rekha'
 where name ='rahu';
 
-
-
 update tech_company
 set dep = 'bussiness Associate'
 where dep= 'tech-support';
