@@ -1,1 +1,31 @@
 
+// pros Handling 
+const Name = (props) => {
+  // const { frist,color } = props;
+  const {info}= props;
+  return (
+    // <p>{frist},{color}</p>
+    <p>I am {info.brand}</p>
+  );
+}
+
+export default Name;
+
+
+// pros sent to another componet 
+
+import React from "react";
+import Car from "./Car";
+function App  () {
+
+  const name = "hello World";
+  const color = "Black"
+  const info = {brand:'Redmi', Model : '15 pro Max'};
+  return (
+    //  <Car frist = {name} color= {color} info/>
+    <Car info ={info} />
+  );
+
+}
+
+export default App;
