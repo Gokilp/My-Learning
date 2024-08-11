@@ -29,3 +29,8 @@ function App  () {
 }
 
 export default App;
+
+// ternary operator used only in if else condtion
+
+// && operator only used in if condition 
+
