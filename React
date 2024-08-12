@@ -37,3 +37,11 @@ export default App;
 lisiting 
 // Object using object unique  Value
 // array access index Value 
+
+
+
+useffect 
+
+no dependice = > every time run
+[] = one time Run 
+[ value ] = Value Change after Run 
