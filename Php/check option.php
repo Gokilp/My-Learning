@@ -1,9 +1,6 @@
 // Create a Radio using php application 
 // Radio button means selecting an option 
 // Radio 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
