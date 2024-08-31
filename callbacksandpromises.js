@@ -47,3 +47,29 @@ setTimeoutpromisfied(1000).then( ()=>{
    });
     });
 });
+
+
+      // Async and Await 
+
+function setTimeoutpromisfied(ms){
+    return new Promise ((resolve)=>{
+       setTimeout(resolve,ms);
+ });
+}
+
+
+async function slove(){
+
+await setTimeoutpromisfied(1000);
+  console.log("hi");
+
+await setTimeoutpromisfied(2000)
+  console.log("Hi there ");
+
+await setTimeoutpromisfied(5000)
+ console.log("Hi World Programing ")
+
+
+} 
+
+slove();
