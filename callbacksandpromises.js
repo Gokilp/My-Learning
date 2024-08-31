@@ -1,5 +1,3 @@
-// call backs
-
 setTimeout(()=>{
   console.log("hi");
   setTimeout(()=>{
@@ -28,3 +26,24 @@ function Step1(){
 
 setTimeout(Step1,1000)
   
+
+                  // Promises 
+
+function setTimeoutpromisfied (duration)
+{
+    return new Promise ((resolve)=>{
+
+        setTimeout(resolve,duration)
+     
+     });
+}
+
+setTimeoutpromisfied(1000).then( ()=>{
+   console.log("Hi");
+   return setTimeoutpromisfied(2000).then(()=>{
+      console.log("Good Morning");
+   return setTimeoutpromisfied(5000).then(()=>{
+       console.log("Good  programming");
+   });
+    });
+});
