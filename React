@@ -1,4 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text"> </input>
+     <button onclick="createele()">Add</button>
+</body>
+<script>
 
+
+function createele(){
+ 
+    const Value  = document.querySelector("input").value;
+    const span = document.createElement("span"); // create a span tag 
+    const button = document.createElement("button");
+    span.innerHTML = Value;
+    button.innerHTML = "Delete";
+    const div = document.createElement("div");
+    div.appendChild(span);
+    div.appendChild(button);
+    document.querySelector("body").appendChild(div);
+}
+</script>
+</html>
 // pros Handling 
 const Name = (props) => {
   // const { frist,color } = props;
